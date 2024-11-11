@@ -31,3 +31,8 @@ while True:
         print("Ismingizni kiritmadingiz ")
         continue
     break
+if Foydalanuvchi[1] <= 18:
+    print("Kechirasiz siz dasturdan toliq foydalana olmaysiz ")
+else:
+    print("Siz uchun hamma imkoniyatlar ochiq ")
+    
