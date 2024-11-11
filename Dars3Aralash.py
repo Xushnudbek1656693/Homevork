@@ -39,23 +39,35 @@
 
 # 1.1
 
-jami = []
+# jami = []
+# def talaba_haqida(ism,yosh):
+#     talaba = {
+#         'Ism': ism,
+#         'Yosh': yosh
+#     }
+#     jami.append(talaba)
 
-def talaba_haqida(ism,yosh):
-    talaba = {
-        'Ism': ism,
-        'Yosh': yosh
-    }
-    jami.append(talaba)
+# oz = 1
+# while oz < 6:
+#     ism = input(f'{oz}-Talabani ismini kiriting; ')
+#     yosh = int(input(f"{ism.capitalize()}ning yoshini kiriting; "))
+#     talaba_haqida(ism, yosh)
+#     oz += 1
 
-oz = 1
-while oz < 6:
-    ism = input(f'{oz}-Talabani ismini kiriting; ')
-    yosh = int(input(f"{ism.capitalize()}ning yoshini kiriting; "))
-    talaba_haqida(ism, yosh)
-    oz += 1
+# jami.sort(key = lambda x:x['Yosh'])
 
-jami.sort(key = lambda x:x['Yosh'])
+# for i in jami:
+#     print(f"{i['Ism']}ning yoshi {i["Yosh"]} da")
 
-for i in jami:
-    print(f"{i['Ism']}ning yoshi {i["Yosh"]} da")
+#2
+
+son = int(input("Nechta fibanachi soni chiqsin "))
+oz = 0
+a1 = 0
+a2 = 1
+while oz < son:
+    a3 = a1 + a2
+    a1 = a2
+    a2 = a3
+    print(a1)
+    oz+=1
