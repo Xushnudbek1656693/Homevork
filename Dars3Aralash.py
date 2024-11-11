@@ -61,13 +61,32 @@
 
 #2
 
-son = int(input("Nechta fibanachi soni chiqsin "))
-oz = 0
-a1 = 0
-a2 = 1
-while oz < son:
-    a3 = a1 + a2
-    a1 = a2
-    a2 = a3
-    print(a1)
-    oz+=1
+# son = int(input("Nechta fibanachi soni chiqsin; "))
+# oz = 0
+# a1 = 0
+# a2 = 1
+# while oz < son:
+#     a3 = a1 + a2
+#     a1 = a2
+#     a2 = a3
+#     print(a1)
+#     oz+=1
+
+# 3
+
+pochta = input("Pochtangizni kiriting; ")
+
+if '@' in pochta:
+    if "@gmail.com" in pochta:
+        print("gmail")
+    elif "@yahoo.com" in pochta:
+        print("yahoo")
+    elif "@outlook.com"  in pochta:
+        print("outlook")
+    else:
+        print("Bunaqa email yo'q bizning bazamizda ")
+else:
+    print("Bunday xolatda email yozib bolmaydi ")
+
+# 4
+
