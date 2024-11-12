@@ -89,20 +89,44 @@
 #     print("Bunday xolatda email yozib bolmaydi ")
 
 # 4
-jami = []
-soni = int(input("Nechi xil maxsulot olasiz "))
-for i in range(soni): 
-    maxsulot = input(f"{i+1}-maxsulot nomini kiriting; ")
-    narx = float(input(f"{maxsulot} narxini kiriting; "))
-    maxsulotlar = {
-        "Ismi":maxsulot,
-        "Narxi":narx
-    }
-    jami.append(maxsulotlar)
-narxJami = []
-for i in jami:
-    narxJami.append(i["Narxi"])
-if sum(narxJami) >= 100:
-    print(f"Sizning jami xaridingiz 100 mingdan oshgani uchun 10% lig chegirma bor ")
-else:
-    print("Dokonimizdan xarid qilganingiz uchun raxmat ")
+# jami = []
+# soni = int(input("Nechi xil maxsulot olasiz "))
+# for i in range(soni): 
+#     maxsulot = input(f"{i+1}-maxsulot nomini kiriting; ")
+#     narx = float(input(f"{maxsulot} narxini kiriting; "))
+#     maxsulotlar = {
+#         "Ismi":maxsulot,
+#         "Narxi":narx
+#     }
+#     jami.append(maxsulotlar)
+# narxJami = []
+# for i in jami:
+#     narxJami.append(i["Narxi"])
+# if sum(narxJami) >= 100:
+#     print(f"Sizning jami xaridingiz 100 mingdan oshgani uchun 10% lig chegirma bor ")
+# else:
+#     print("Dokonimizdan xarid qilganingiz uchun raxmat ")
+
+# 5
+
+# jami = []
+# print("10 ta son kiriting")
+# for i in range(1, 11):
+#     son = int(input(f"{i}-soni kiriting; "))
+#     jami.append(son)
+# sonTupl = set()
+# takroriSon = []
+# for i in jami:
+#     if i not in sonTupl:
+#         sonTupl.add(i)
+#     else:
+#         takroriSon.append(i)
+# print("Takrorlanmagan sonlar")
+# for i in jami:
+#     if i not in takroriSon:
+#         print(i)
+
+# 6
+
+
+
