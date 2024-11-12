@@ -74,19 +74,35 @@
 
 # 3
 
-pochta = input("Pochtangizni kiriting; ")
+# pochta = input("Pochtangizni kiriting; ")
 
-if '@' in pochta:
-    if "@gmail.com" in pochta:
-        print("gmail")
-    elif "@yahoo.com" in pochta:
-        print("yahoo")
-    elif "@outlook.com"  in pochta:
-        print("outlook")
-    else:
-        print("Bunaqa email yo'q bizning bazamizda ")
-else:
-    print("Bunday xolatda email yozib bolmaydi ")
+# if '@' in pochta:
+#     if "@gmail.com" in pochta:
+#         print("gmail")
+#     elif "@yahoo.com" in pochta:
+#         print("yahoo")
+#     elif "@outlook.com"  in pochta:
+#         print("outlook")
+#     else:
+#         print("Bunaqa email yo'q bizning bazamizda ")
+# else:
+#     print("Bunday xolatda email yozib bolmaydi ")
 
 # 4
-
+jami = []
+soni = int(input("Nechi xil maxsulot olasiz "))
+for i in range(soni): 
+    maxsulot = input(f"{i+1}-maxsulot nomini kiriting; ")
+    narx = float(input(f"{maxsulot} narxini kiriting; "))
+    maxsulotlar = {
+        "Ismi":maxsulot,
+        "Narxi":narx
+    }
+    jami.append(maxsulotlar)
+narxJami = []
+for i in jami:
+    narxJami.append(i["Narxi"])
+if sum(narxJami) >= 100:
+    print(f"Sizning jami xaridingiz 100 mingdan oshgani uchun 10% lig chegirma bor ")
+else:
+    print("Dokonimizdan xarid qilganingiz uchun raxmat ")
