@@ -128,5 +128,25 @@
 
 # 6
 
+print("Talabalarni Baxolang minimal 70 maksimal 90 baxo qoying ")
+son = int(input("Nechta talaba kiritasiz; "))
+jami = []
+for i in range(son):
+    ism = input(f"{i+1}-talabani kiriting; ")
+    baxo = int(input(f"{ism}ning baxosini kiriting; "))
+    talabalar = {
+        "Ism":ism,
+        "Baxo":baxo
+    }
+    jami.append(talabalar)
+for i in jami:
+    if i["Baxo"] <= 70:
+        print(f"{i["Ism"]}ning baxosi yomon")
+    elif i["Baxo"] > 70 and i["Baxo"] <=80:
+        print(f"{i["Ism"]}ning baxosi yaxshi")
+    elif i["Baxo"] > 80 and i["Baxo"] <=90:
+        print(f"{i["Ism"]}ning baxosi Alo")
+    else:
+        print("Bunday baxo yoq ")
 
 
