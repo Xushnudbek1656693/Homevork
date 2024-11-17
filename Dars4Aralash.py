@@ -1,3 +1,10 @@
+kod = 1234
+while True:
+    pin = int(input("Parolni kiriting; "))
+    if kod == pin:
+        break
+    else:
+        print("Xato kod terdingiz !!!! ")
 balans = 50000
 while True:
     id = input("""
