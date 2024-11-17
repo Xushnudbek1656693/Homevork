@@ -170,29 +170,29 @@
 
 # 8 
 
-son = int(input("Nechta talaba kiritasiz; "))
-jami = []
-for i in range(son):
-    ism = input(f"{i+1}-talaba ismini kiriting; ")
-    bilSon = int(input(f"{ism} nechta dasturlash tilini biladi; "))
-    Tillari = []
-    for i in range(bilSon):
-        bil = input(f"{ism}ning {i+1}-biladigan dasturlash tilini kiriting; ")
-        Tillari.append(bil)
-    talaba = {
-        "Ism":ism,
-        "DasturlashTilari":Tillari
-    }
-    jami.append(talaba)
-for i in jami:
-    if "python" in i["DasturlashTilari"] and 'javascript' in i["DasturlashTilari"]:
-        print(f"Talaba {i["Ism"]} unversal dasturchi ")
-    elif "python" in i["DasturlashTilari"]:
-        print(f"Talaba {i["Ism"]} Python boyicha dasturchi ")
-    elif 'javascript' in i["DasturlashTilari"]:
-        print(f"Talaba {i["Ism"]} JavaScript boyicha dasturchi ")
-    else:
-        print("Boshqacha dasturchi ")
+# son = int(input("Nechta talaba kiritasiz; "))
+# jami = []
+# for i in range(son):
+#     ism = input(f"{i+1}-talaba ismini kiriting; ")
+#     bilSon = int(input(f"{ism} nechta dasturlash tilini biladi; "))
+#     Tillari = []
+#     for i in range(bilSon):
+#         bil = input(f"{ism}ning {i+1}-biladigan dasturlash tilini kiriting; ")
+#         Tillari.append(bil)
+#     talaba = {
+#         "Ism":ism,
+#         "DasturlashTilari":Tillari
+#     }
+#     jami.append(talaba)
+# for i in jami:
+#     if "python" in i["DasturlashTilari"] and 'javascript' in i["DasturlashTilari"]:
+#         print(f"Talaba {i["Ism"]} unversal dasturchi ")
+#     elif "python" in i["DasturlashTilari"]:
+#         print(f"Talaba {i["Ism"]} Python boyicha dasturchi ")
+#     elif 'javascript' in i["DasturlashTilari"]:
+#         print(f"Talaba {i["Ism"]} JavaScript boyicha dasturchi ")
+#     else:
+#         print("Boshqacha dasturchi ")
 
 
 
