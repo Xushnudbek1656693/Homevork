@@ -194,7 +194,5 @@ for i in jami:
     else:
         print("Boshqacha dasturchi ")
 
-print(jami)
-
 
 
